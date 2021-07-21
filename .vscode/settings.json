@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "if_ether.h": "c",
+        "if_packet.h": "c",
+        "bpf_helpers.h": "c",
+        "bpf_helper_defs.h": "c",
+        "skb.h": "c",
+        "helpers_skb.h": "c",
+        "compiler.h": "c",
+        "stddef.h": "c",
+        "features_skb.h": "c",
+        "common.h": "c",
+        "errno.h": "c",
+        "helpers.h": "c",
+        "features.h": "c"
+    }
+    // "C_Cpp.errorSquiggles": "Disabled"
+}
