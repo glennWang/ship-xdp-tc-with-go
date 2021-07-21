@@ -1,5 +1,5 @@
 
-PROJECT = ship-xdp-with-go
+PROJECT = ship-xdp-tc-with-go
 
 .PHONY: clean $(PROJECT)
 
