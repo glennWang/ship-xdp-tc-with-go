@@ -60,7 +60,7 @@ func main() {
 
 	filterattrs := netlink.FilterAttrs{
 		LinkIndex: link.Attrs().Index,
-		Parent:    netlink.HANDLE_MIN_INGRESS, // netlink.HANDLE_MIN_EGRESS,
+		Parent:    netlink.HANDLE_MIN_INGRESS, // netlink.HANDLE_MIN_EGRESS, // ingress or egress
 		Handle:    netlink.MakeHandle(0, 1),
 		Protocol:  unix.ETH_P_ALL,
 		Priority:  1,
