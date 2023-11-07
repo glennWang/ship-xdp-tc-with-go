@@ -43,12 +43,12 @@ func main() {
 	}
 	defer objs.Close()
 
-	link, err := netlink.LinkByName("eth3")
+	link, err := netlink.LinkByName("enp5s0f1")
 	if err != nil {
 		panic(err)
 	}
 
-	/*-----------*/
+	/*-----attach to TC------*/
 
 	info, _ := objs.TcSay.Info()
 
@@ -113,7 +113,7 @@ func main() {
 		// fmt.Println("after del: len(qdiscs) == ", len(qdiscs))
 	}()
 
-	/*-----------*/
+	/*-----attach to xdp------*/
 
 	err = netlink.LinkSetXdpFdWithFlags(link, objs.XdpAclFunc.FD(), XDP_FLAGS_AUTO_MODE)
 	if err != nil {

@@ -4,6 +4,8 @@ How to ship BPF with your Go project
 This repository shows you how to use [bpf2go](https://github.com/cilium/ebpf) to embed pre-compiled eBPF in your Go project for easy distribution.
 
 ```
+$ go get github.com/cilium/ebpf/cmd/bpf2go@v0.12.2
+
 $ make clean && make
 $ sudo ./ship-xdp-with-go
 ```
