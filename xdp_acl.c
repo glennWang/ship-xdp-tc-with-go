@@ -53,6 +53,7 @@
 // FIXED value
 #define ETH_HDR_SIZE 14
 #define IP_HDR_SIZE 20
+#define IP6_HDR_SIZE 40
 #define TCP_HDR_SIZE 20
 #define UDP_HDR_SIZE 8
 
